@@ -1,0 +1,490 @@
+<div class="page-wrapper chiller-theme">
+    <a id="show-sidebar" class="btn btn-sm btn-dark">
+      <i class="fas fa-bars"></i>
+    </a>
+    <app-sidebar></app-sidebar>
+    <!-- sidebar-wrapper  -->
+    <main class="page-content">
+      <app-header headerMainTitle="Manage Exchanges">
+      </app-header>
+  
+      <div class="container-fluid contentpage_wrapper">
+        <div class="pagecontent_wrapper">
+         <div class="tab-bk-g">
+            <!-- Tab section -->
+            <ul class="nav nav-pills" id="approval-tabs-g" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="approval-list-tab" data-toggle="pill" href="#approval-list" role="tab" aria-controls="pills-home" aria-selected="true">Approval List</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="rejected-list-tab" data-toggle="pill" href="#rejected-list" role="tab" aria-controls="pills-profile" aria-selected="false">Rejected List</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="approv-pills-tabContent">
+                  <!-- Approval list tab -->
+                <div class="tab-pane fade show active" id="approval-list" role="tabpanel" aria-labelledby="approval-list-tab">
+                    <div class="table-responsive">
+                        <table class="peak-table" id="approval-list-table">
+                            <thead>
+                                <tr>
+                                    <th>Exchange #
+                                        <span class="table-sort-g"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                            <path d="M3.99999 13.1302C3.85661 13.1302 3.71325 13.0686 3.60394 12.9457L0.164113 9.07588C-0.0547045 8.82971 -0.0547045 8.43059 0.164113 8.18452C0.382843 7.93845 0.737548 7.93845 0.956383 8.18452L3.99999 11.6088L7.04361 8.18464C7.26243 7.93857 7.61709 7.93857 7.83581 8.18464C8.05473 8.43071 8.05473 8.82983 7.83581 9.076L4.39603 12.9458C4.28667 13.0688 4.14331 13.1302 3.99999 13.1302Z" fill="#606669"/>
+                                            <path d="M3.99999 -3.8147e-06C3.85661 -3.8147e-06 3.71325 0.0615835 3.60394 0.184499L0.164113 4.05434C-0.0547045 4.3005 -0.0547045 4.69963 0.164113 4.9457C0.382843 5.19177 0.737548 5.19177 0.956383 4.9457L3.99999 1.52145L7.04361 4.94558C7.26243 5.19165 7.61709 5.19165 7.83581 4.94558C8.05473 4.69951 8.05473 4.30039 7.83581 4.05422L4.39603 0.184379C4.28667 0.0614438 4.14331 -3.8147e-06 3.99999 -3.8147e-06Z" fill="#606669"/>
+                                            </svg></span>
+                                    </th>
+                                    <th>Customer Name
+                                        <span class="table-sort-g"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                            <path d="M3.99999 13.1302C3.85661 13.1302 3.71325 13.0686 3.60394 12.9457L0.164113 9.07588C-0.0547045 8.82971 -0.0547045 8.43059 0.164113 8.18452C0.382843 7.93845 0.737548 7.93845 0.956383 8.18452L3.99999 11.6088L7.04361 8.18464C7.26243 7.93857 7.61709 7.93857 7.83581 8.18464C8.05473 8.43071 8.05473 8.82983 7.83581 9.076L4.39603 12.9458C4.28667 13.0688 4.14331 13.1302 3.99999 13.1302Z" fill="#606669"/>
+                                            <path d="M3.99999 -3.8147e-06C3.85661 -3.8147e-06 3.71325 0.0615835 3.60394 0.184499L0.164113 4.05434C-0.0547045 4.3005 -0.0547045 4.69963 0.164113 4.9457C0.382843 5.19177 0.737548 5.19177 0.956383 4.9457L3.99999 1.52145L7.04361 4.94558C7.26243 5.19165 7.61709 5.19165 7.83581 4.94558C8.05473 4.69951 8.05473 4.30039 7.83581 4.05422L4.39603 0.184379C4.28667 0.0614438 4.14331 -3.8147e-06 3.99999 -3.8147e-06Z" fill="#606669"/>
+                                            </svg></span>
+                                    </th>
+                                    <th>Relinquished Address
+                                        <span class="table-sort-g"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                            <path d="M3.99999 13.1302C3.85661 13.1302 3.71325 13.0686 3.60394 12.9457L0.164113 9.07588C-0.0547045 8.82971 -0.0547045 8.43059 0.164113 8.18452C0.382843 7.93845 0.737548 7.93845 0.956383 8.18452L3.99999 11.6088L7.04361 8.18464C7.26243 7.93857 7.61709 7.93857 7.83581 8.18464C8.05473 8.43071 8.05473 8.82983 7.83581 9.076L4.39603 12.9458C4.28667 13.0688 4.14331 13.1302 3.99999 13.1302Z" fill="#606669"/>
+                                            <path d="M3.99999 -3.8147e-06C3.85661 -3.8147e-06 3.71325 0.0615835 3.60394 0.184499L0.164113 4.05434C-0.0547045 4.3005 -0.0547045 4.69963 0.164113 4.9457C0.382843 5.19177 0.737548 5.19177 0.956383 4.9457L3.99999 1.52145L7.04361 4.94558C7.26243 5.19165 7.61709 5.19165 7.83581 4.94558C8.05473 4.69951 8.05473 4.30039 7.83581 4.05422L4.39603 0.184379C4.28667 0.0614438 4.14331 -3.8147e-06 3.99999 -3.8147e-06Z" fill="#606669"/>
+                                            </svg></span>
+                                    </th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#" class="exchange-num-g">E-87654</a></td>
+                                    <td>Lior Raz</td>
+                                    <td>603 Halifax Ave.Solon, OH 44139 </td>
+                                    <td>
+                                        <button class="accept-btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                                                <path d="M0 6.51044L5.4791 12L16 1.4895L14.4896 -6.10352e-05L5.4791 8.99993L1.48953 5.01039L0 6.51044Z" fill="white"/>
+                                                </svg>
+                                                Accept
+                                        </button>
+                                        <buton class="reject-btn"><img src="../../../assets/images/close_btn.png"></buton>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="exchange-num-g">E-87654</a></td>
+                                    <td>Lior Raz</td>
+                                    <td>603 Halifax Ave.Solon, OH 44139 </td>
+                                    <td>
+                                        <button class="accept-btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                                                <path d="M0 6.51044L5.4791 12L16 1.4895L14.4896 -6.10352e-05L5.4791 8.99993L1.48953 5.01039L0 6.51044Z" fill="white"/>
+                                                </svg>
+                                                Accept
+                                        </button>
+                                        <buton class="reject-btn"><img src="../../../assets/images/close_btn.png"></buton>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="exchange-num-g">E-87654</a></td>
+                                    <td>Lior Raz</td>
+                                    <td>603 Halifax Ave.Solon, OH 44139 </td>
+                                    <td>
+                                        <button class="accept-btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                                                <path d="M0 6.51044L5.4791 12L16 1.4895L14.4896 -6.10352e-05L5.4791 8.99993L1.48953 5.01039L0 6.51044Z" fill="white"/>
+                                                </svg>
+                                                Accept
+                                        </button>
+                                        <buton class="reject-btn"><img src="../../../assets/images/close_btn.png"></buton>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="exchange-num-g">E-87654</a></td>
+                                    <td>Lior Raz</td>
+                                    <td>603 Halifax Ave.Solon, OH 44139 </td>
+                                    <td>
+                                        <button class="accept-btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                                                <path d="M0 6.51044L5.4791 12L16 1.4895L14.4896 -6.10352e-05L5.4791 8.99993L1.48953 5.01039L0 6.51044Z" fill="white"/>
+                                                </svg>
+                                                Accept
+                                        </button>
+                                        <buton class="reject-btn"><img src="../../../assets/images/close_btn.png"></buton>
+                                    </td>
+                                </tr> <tr>
+                                    <td><a href="#" class="exchange-num-g">E-87654</a></td>
+                                    <td>Lior Raz</td>
+                                    <td>603 Halifax Ave.Solon, OH 44139 </td>
+                                    <td>
+                                        <button class="accept-btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                                                <path d="M0 6.51044L5.4791 12L16 1.4895L14.4896 -6.10352e-05L5.4791 8.99993L1.48953 5.01039L0 6.51044Z" fill="white"/>
+                                                </svg>
+                                                Accept
+                                        </button>
+                                        <buton class="reject-btn"><img src="../../../assets/images/close_btn.png"></buton>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="exchange-num-g">E-87654</a></td>
+                                    <td>Lior Raz</td>
+                                    <td>603 Halifax Ave.Solon, OH 44139 </td>
+                                    <td>
+                                        <button class="accept-btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                                                <path d="M0 6.51044L5.4791 12L16 1.4895L14.4896 -6.10352e-05L5.4791 8.99993L1.48953 5.01039L0 6.51044Z" fill="white"/>
+                                                </svg>
+                                                Accept
+                                        </button>
+                                        <buton class="reject-btn"><img src="../../../assets/images/close_btn.png"></buton>
+                                    </td>
+                                </tr> <tr>
+                                    <td><a href="#" class="exchange-num-g">E-87654</a></td>
+                                    <td>Lior Raz</td>
+                                    <td>603 Halifax Ave.Solon, OH 44139 </td>
+                                    <td>
+                                        <button class="accept-btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                                                <path d="M0 6.51044L5.4791 12L16 1.4895L14.4896 -6.10352e-05L5.4791 8.99993L1.48953 5.01039L0 6.51044Z" fill="white"/>
+                                                </svg>
+                                                Accept
+                                        </button>
+                                        <buton class="reject-btn"><img src="../../../assets/images/close_btn.png"></buton>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="exchange-num-g">E-87654</a></td>
+                                    <td>Lior Raz</td>
+                                    <td>603 Halifax Ave.Solon, OH 44139 </td>
+                                    <td>
+                                        <button class="accept-btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                                                <path d="M0 6.51044L5.4791 12L16 1.4895L14.4896 -6.10352e-05L5.4791 8.99993L1.48953 5.01039L0 6.51044Z" fill="white"/>
+                                                </svg>
+                                                Accept
+                                        </button>
+                                        <buton class="reject-btn"><img src="../../../assets/images/close_btn.png"></buton>
+                                    </td>
+                                </tr> <tr>
+                                    <td><a href="#" class="exchange-num-g">E-87654</a></td>
+                                    <td>Lior Raz</td>
+                                    <td>603 Halifax Ave.Solon, OH 44139 </td>
+                                    <td>
+                                        <button class="accept-btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                                                <path d="M0 6.51044L5.4791 12L16 1.4895L14.4896 -6.10352e-05L5.4791 8.99993L1.48953 5.01039L0 6.51044Z" fill="white"/>
+                                                </svg>
+                                                Accept
+                                        </button>
+                                        <buton class="reject-btn"><img src="../../../assets/images/close_btn.png"></buton>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="exchange-num-g">E-87654</a></td>
+                                    <td>Lior Raz</td>
+                                    <td>603 Halifax Ave.Solon, OH 44139 </td>
+                                    <td>
+                                        <button class="accept-btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                                                <path d="M0 6.51044L5.4791 12L16 1.4895L14.4896 -6.10352e-05L5.4791 8.99993L1.48953 5.01039L0 6.51044Z" fill="white"/>
+                                                </svg>
+                                                Accept
+                                        </button>
+                                        <buton class="reject-btn"><img src="../../../assets/images/close_btn.png"></buton>
+                                    </td>
+                                </tr> <tr>
+                                    <td><a href="#" class="exchange-num-g">E-87654</a></td>
+                                    <td>Lior Raz</td>
+                                    <td>603 Halifax Ave.Solon, OH 44139 </td>
+                                    <td>
+                                        <button class="accept-btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                                                <path d="M0 6.51044L5.4791 12L16 1.4895L14.4896 -6.10352e-05L5.4791 8.99993L1.48953 5.01039L0 6.51044Z" fill="white"/>
+                                                </svg>
+                                                Accept
+                                        </button>
+                                        <buton class="reject-btn"><img src="../../../assets/images/close_btn.png"></buton>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="exchange-num-g">E-87654</a></td>
+                                    <td>Lior Raz</td>
+                                    <td>603 Halifax Ave.Solon, OH 44139 </td>
+                                    <td>
+                                        <button class="accept-btn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                                                <path d="M0 6.51044L5.4791 12L16 1.4895L14.4896 -6.10352e-05L5.4791 8.99993L1.48953 5.01039L0 6.51044Z" fill="white"/>
+                                                </svg>
+                                                Accept
+                                        </button>
+                                        <buton class="reject-btn"><img src="../../../assets/images/close_btn.png"></buton>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="peak-pagination">
+                        <div class="pagination-inner">
+                            <div class="pagination-left">
+                            <div class="show-entity">
+                                <label class="pagination-label">Show</label>
+                               <input type="number" class="show-select footbo" value="15">
+                                <label class="pagination-label">Entries</label>
+                            </div>
+                            <div class="goto-page-g">
+                                <label class="pagination-label">Go to Page</label>
+                                <input type="text" class="goto-bx" value="1">
+                            </div>
+                        </div>
+                        <div class="pagination-right">
+                            <div class="page-li-g">
+                                <ul>
+                                    <li>Prev.</li>
+                                    <li class="active">1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>16</li>
+                                    <li>17</li>
+                                    <li>18</li>
+                                    <li class="nxt-g">Next</li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                     <!--  end Approval list tab -->
+
+                      <!-- Rejected list tab -->
+                                <div class="tab-pane fade" id="rejected-list" role="tabpanel" aria-labelledby="rejected-list-tab">
+                                    <div class="table-responsive">
+                                        <table class="peak-table action-disable-g" id="approval-list-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Exchange #
+                                                        <span class="table-sort-g"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                                            <path d="M3.99999 13.1302C3.85661 13.1302 3.71325 13.0686 3.60394 12.9457L0.164113 9.07588C-0.0547045 8.82971 -0.0547045 8.43059 0.164113 8.18452C0.382843 7.93845 0.737548 7.93845 0.956383 8.18452L3.99999 11.6088L7.04361 8.18464C7.26243 7.93857 7.61709 7.93857 7.83581 8.18464C8.05473 8.43071 8.05473 8.82983 7.83581 9.076L4.39603 12.9458C4.28667 13.0688 4.14331 13.1302 3.99999 13.1302Z" fill="#606669"/>
+                                                            <path d="M3.99999 -3.8147e-06C3.85661 -3.8147e-06 3.71325 0.0615835 3.60394 0.184499L0.164113 4.05434C-0.0547045 4.3005 -0.0547045 4.69963 0.164113 4.9457C0.382843 5.19177 0.737548 5.19177 0.956383 4.9457L3.99999 1.52145L7.04361 4.94558C7.26243 5.19165 7.61709 5.19165 7.83581 4.94558C8.05473 4.69951 8.05473 4.30039 7.83581 4.05422L4.39603 0.184379C4.28667 0.0614438 4.14331 -3.8147e-06 3.99999 -3.8147e-06Z" fill="#606669"/>
+                                                            </svg></span>
+                                                    </th>
+                                                    <th>Customer Name
+                                                        <span class="table-sort-g"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                                            <path d="M3.99999 13.1302C3.85661 13.1302 3.71325 13.0686 3.60394 12.9457L0.164113 9.07588C-0.0547045 8.82971 -0.0547045 8.43059 0.164113 8.18452C0.382843 7.93845 0.737548 7.93845 0.956383 8.18452L3.99999 11.6088L7.04361 8.18464C7.26243 7.93857 7.61709 7.93857 7.83581 8.18464C8.05473 8.43071 8.05473 8.82983 7.83581 9.076L4.39603 12.9458C4.28667 13.0688 4.14331 13.1302 3.99999 13.1302Z" fill="#606669"/>
+                                                            <path d="M3.99999 -3.8147e-06C3.85661 -3.8147e-06 3.71325 0.0615835 3.60394 0.184499L0.164113 4.05434C-0.0547045 4.3005 -0.0547045 4.69963 0.164113 4.9457C0.382843 5.19177 0.737548 5.19177 0.956383 4.9457L3.99999 1.52145L7.04361 4.94558C7.26243 5.19165 7.61709 5.19165 7.83581 4.94558C8.05473 4.69951 8.05473 4.30039 7.83581 4.05422L4.39603 0.184379C4.28667 0.0614438 4.14331 -3.8147e-06 3.99999 -3.8147e-06Z" fill="#606669"/>
+                                                            </svg></span>
+                                                    </th>
+                                                    <th>Relinquished Address
+                                                        <span class="table-sort-g"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                                                            <path d="M3.99999 13.1302C3.85661 13.1302 3.71325 13.0686 3.60394 12.9457L0.164113 9.07588C-0.0547045 8.82971 -0.0547045 8.43059 0.164113 8.18452C0.382843 7.93845 0.737548 7.93845 0.956383 8.18452L3.99999 11.6088L7.04361 8.18464C7.26243 7.93857 7.61709 7.93857 7.83581 8.18464C8.05473 8.43071 8.05473 8.82983 7.83581 9.076L4.39603 12.9458C4.28667 13.0688 4.14331 13.1302 3.99999 13.1302Z" fill="#606669"/>
+                                                            <path d="M3.99999 -3.8147e-06C3.85661 -3.8147e-06 3.71325 0.0615835 3.60394 0.184499L0.164113 4.05434C-0.0547045 4.3005 -0.0547045 4.69963 0.164113 4.9457C0.382843 5.19177 0.737548 5.19177 0.956383 4.9457L3.99999 1.52145L7.04361 4.94558C7.26243 5.19165 7.61709 5.19165 7.83581 4.94558C8.05473 4.69951 8.05473 4.30039 7.83581 4.05422L4.39603 0.184379C4.28667 0.0614438 4.14331 -3.8147e-06 3.99999 -3.8147e-06Z" fill="#606669"/>
+                                                            </svg></span>
+                                                    </th>
+                                                    <th>Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><a href="#" class="exchange-num-g">E-87654</a></td>
+                                                    <td>Lior Raz</td>
+                                                    <td>603 Halifax Ave.Solon, OH 44139 </td>
+                                                    <td>
+                                                        <button class="accept-btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                                                                <path d="M0 6.51044L5.4791 12L16 1.4895L14.4896 -6.10352e-05L5.4791 8.99993L1.48953 5.01039L0 6.51044Z" fill="white"/>
+                                                                </svg>
+                                                                Accept
+                                                        </button>
+                                                        <buton class="reject-btn"><img src="../../../assets/images/close_btn.png"></buton>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#" class="exchange-num-g">E-87654</a></td>
+                                                    <td>Lior Raz</td>
+                                                    <td>603 Halifax Ave.Solon, OH 44139 </td>
+                                                    <td>
+                                                        <button class="accept-btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                                                                <path d="M0 6.51044L5.4791 12L16 1.4895L14.4896 -6.10352e-05L5.4791 8.99993L1.48953 5.01039L0 6.51044Z" fill="white"/>
+                                                                </svg>
+                                                                Accept
+                                                        </button>
+                                                        <buton class="reject-btn"><img src="../../../assets/images/close_btn.png"></buton>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#" class="exchange-num-g">E-87654</a></td>
+                                                    <td>Lior Raz</td>
+                                                    <td>603 Halifax Ave.Solon, OH 44139 </td>
+                                                    <td>
+                                                        <button class="accept-btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                                                                <path d="M0 6.51044L5.4791 12L16 1.4895L14.4896 -6.10352e-05L5.4791 8.99993L1.48953 5.01039L0 6.51044Z" fill="white"/>
+                                                                </svg>
+                                                                Accept
+                                                        </button>
+                                                        <buton class="reject-btn"><img src="../../../assets/images/close_btn.png"></buton>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#" class="exchange-num-g">E-87654</a></td>
+                                                    <td>Lior Raz</td>
+                                                    <td>603 Halifax Ave.Solon, OH 44139 </td>
+                                                    <td>
+                                                        <button class="accept-btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                                                                <path d="M0 6.51044L5.4791 12L16 1.4895L14.4896 -6.10352e-05L5.4791 8.99993L1.48953 5.01039L0 6.51044Z" fill="white"/>
+                                                                </svg>
+                                                                Accept
+                                                        </button>
+                                                        <buton class="reject-btn"><img src="../../../assets/images/close_btn.png"></buton>
+                                                    </td>
+                                                </tr> <tr>
+                                                    <td><a href="#" class="exchange-num-g">E-87654</a></td>
+                                                    <td>Lior Raz</td>
+                                                    <td>603 Halifax Ave.Solon, OH 44139 </td>
+                                                    <td>
+                                                        <button class="accept-btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                                                                <path d="M0 6.51044L5.4791 12L16 1.4895L14.4896 -6.10352e-05L5.4791 8.99993L1.48953 5.01039L0 6.51044Z" fill="white"/>
+                                                                </svg>
+                                                                Accept
+                                                        </button>
+                                                        <buton class="reject-btn"><img src="../../../assets/images/close_btn.png"></buton>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#" class="exchange-num-g">E-87654</a></td>
+                                                    <td>Lior Raz</td>
+                                                    <td>603 Halifax Ave.Solon, OH 44139 </td>
+                                                    <td>
+                                                        <button class="accept-btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                                                                <path d="M0 6.51044L5.4791 12L16 1.4895L14.4896 -6.10352e-05L5.4791 8.99993L1.48953 5.01039L0 6.51044Z" fill="white"/>
+                                                                </svg>
+                                                                Accept
+                                                        </button>
+                                                        <buton class="reject-btn"><img src="../../../assets/images/close_btn.png"></buton>
+                                                    </td>
+                                                </tr> <tr>
+                                                    <td><a href="#" class="exchange-num-g">E-87654</a></td>
+                                                    <td>Lior Raz</td>
+                                                    <td>603 Halifax Ave.Solon, OH 44139 </td>
+                                                    <td>
+                                                        <button class="accept-btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                                                                <path d="M0 6.51044L5.4791 12L16 1.4895L14.4896 -6.10352e-05L5.4791 8.99993L1.48953 5.01039L0 6.51044Z" fill="white"/>
+                                                                </svg>
+                                                                Accept
+                                                        </button>
+                                                        <buton class="reject-btn"><img src="../../../assets/images/close_btn.png"></buton>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#" class="exchange-num-g">E-87654</a></td>
+                                                    <td>Lior Raz</td>
+                                                    <td>603 Halifax Ave.Solon, OH 44139 </td>
+                                                    <td>
+                                                        <button class="accept-btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                                                                <path d="M0 6.51044L5.4791 12L16 1.4895L14.4896 -6.10352e-05L5.4791 8.99993L1.48953 5.01039L0 6.51044Z" fill="white"/>
+                                                                </svg>
+                                                                Accept
+                                                        </button>
+                                                        <buton class="reject-btn"><img src="../../../assets/images/close_btn.png"></buton>
+                                                    </td>
+                                                </tr> <tr>
+                                                    <td><a href="#" class="exchange-num-g">E-87654</a></td>
+                                                    <td>Lior Raz</td>
+                                                    <td>603 Halifax Ave.Solon, OH 44139 </td>
+                                                    <td>
+                                                        <button class="accept-btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                                                                <path d="M0 6.51044L5.4791 12L16 1.4895L14.4896 -6.10352e-05L5.4791 8.99993L1.48953 5.01039L0 6.51044Z" fill="white"/>
+                                                                </svg>
+                                                                Accept
+                                                        </button>
+                                                        <buton class="reject-btn"><img src="../../../assets/images/close_btn.png"></buton>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#" class="exchange-num-g">E-87654</a></td>
+                                                    <td>Lior Raz</td>
+                                                    <td>603 Halifax Ave.Solon, OH 44139 </td>
+                                                    <td>
+                                                        <button class="accept-btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                                                                <path d="M0 6.51044L5.4791 12L16 1.4895L14.4896 -6.10352e-05L5.4791 8.99993L1.48953 5.01039L0 6.51044Z" fill="white"/>
+                                                                </svg>
+                                                                Accept
+                                                        </button>
+                                                        <buton class="reject-btn"><img src="../../../assets/images/close_btn.png"></buton>
+                                                    </td>
+                                                </tr> <tr>
+                                                    <td><a href="#" class="exchange-num-g">E-87654</a></td>
+                                                    <td>Lior Raz</td>
+                                                    <td>603 Halifax Ave.Solon, OH 44139 </td>
+                                                    <td>
+                                                        <button class="accept-btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                                                                <path d="M0 6.51044L5.4791 12L16 1.4895L14.4896 -6.10352e-05L5.4791 8.99993L1.48953 5.01039L0 6.51044Z" fill="white"/>
+                                                                </svg>
+                                                                Accept
+                                                        </button>
+                                                        <buton class="reject-btn"><img src="../../../assets/images/close_btn.png"></buton>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#" class="exchange-num-g">E-87654</a></td>
+                                                    <td>Lior Raz</td>
+                                                    <td>603 Halifax Ave.Solon, OH 44139 </td>
+                                                    <td>
+                                                        <button class="accept-btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12" fill="none">
+                                                                <path d="M0 6.51044L5.4791 12L16 1.4895L14.4896 -6.10352e-05L5.4791 8.99993L1.48953 5.01039L0 6.51044Z" fill="white"/>
+                                                                </svg>
+                                                                Accept
+                                                        </button>
+                                                        <buton class="reject-btn"><img src="../../../assets/images/close_btn.png"></buton>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="peak-pagination">
+                                        <div class="pagination-inner">
+                                            <div class="pagination-left">
+                                            <div class="show-entity">
+                                                <label class="pagination-label">Show</label>
+                                               <input type="number" class="show-select footbo" value="15">
+                                                <label class="pagination-label">Entries</label>
+                                            </div>
+                                            <div class="goto-page-g">
+                                                <label class="pagination-label">Go to Page</label>
+                                                <input type="text" class="goto-bx" value="1">
+                                            </div>
+                                        </div>
+                                        <div class="pagination-right">
+                                            <div class="page-li-g">
+                                                <ul>
+                                                    <li>Prev.</li>
+                                                    <li class="active">1</li>
+                                                    <li>2</li>
+                                                    <li>3</li>
+                                                    <li>16</li>
+                                                    <li>17</li>
+                                                    <li>18</li>
+                                                    <li class="nxt-g">Next</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                
+                
+                                        </div>
+                                    </div>
+                                </div>
+                 <!-- end rejected  list tab -->
+              </div>
+
+            <!-- End Tab secction -->
+         </div>    
+        </div>
+      </div>
+    
+    </main>
+  </div>
+  

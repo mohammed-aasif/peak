@@ -1,0 +1,122 @@
+<div class="page-wrapper chiller-theme">
+    <a id="show-sidebar" class="btn btn-sm btn-dark">
+      <i class="fas fa-bars"></i>
+    </a>
+    <app-sidebar></app-sidebar>
+    <!-- sidebar-wrapper  -->
+    <main class="page-content">
+      <app-header headerMainTitle="Manage Exchanges">
+      </app-header>
+  
+      <div class="container-fluid contentpage_wrapper">
+        <div class="pagecontent_wrapper">
+         <div class="white_wrapper">
+            <h2 class="peak-form-head">New Exchange Intake Form</h2>
+            <div class="c0l-12 form-bk-g">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 form-inner-g">
+                        <div class="peak-form">
+                            <label class="peak-form-label">Relinquished Property Address<span class="c-red">*</span></label>
+                            <textarea placeholder="Enter Address" class="peak-box-g peak-t-area">7492 Pennington Dr.Oceanside, NY 11572</textarea>
+                        </div>
+                    </div>
+                    <!-- second right -->
+                    <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 form-inner-g">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-inner-g">
+                            <div class="peak-form">
+                            <label class="peak-form-label">Settlement Agent / Escrow Officer Name<span class="c-red">*</span></label>
+                            <input type="text" placeholder="Enter Officer Name" class="peak-box-g" value="Kit Harrington">
+                            </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-inner-g">
+                                <div class="peak-form">
+                                <label class="peak-form-label">Settlement Agent/Escrow Company Name<span class="c-red">*</span></label>
+                                <input type="text" placeholder="Enter Company Name" class="peak-box-g" value="American Home Agents">
+                                </div>
+                                </div>
+                            
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-inner-g">
+                                    <div class="peak-form">
+                                    <label class="peak-form-label">Settlement Agent/Escrow Officer Phone #<span class="c-red">*</span></label>
+                                    <input type="text" placeholder="Enter Officer Phone" class="peak-box-g" value="+1-541-754-3010">
+                                    </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 form-inner-g">
+                                        <div class="peak-form">
+                                        <label class="peak-form-label">Settlement Agent / Escrow Officer Email<span class="c-red">*</span></label>
+                                        <input type="Email" placeholder="Enter Officer Email" class="peak-box-g" value="kit_harr@gmail.com">
+                                        </div>
+                                        </div>
+                    </div>
+                    </div>
+                    <!-- second right -->
+
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 form-inner-g">
+                        <div class="peak-form">
+                        <label class="peak-form-label">How do you hold title to the Property?<span class="c-red">*</span></label>
+                        <input type="text" placeholder="Enter Title" class="peak-box-g">
+                        </div>
+                        </div>
+
+                        
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 form-inner-g">
+                        <div class="peak-form">
+                        <label class="peak-form-label">Approx.Current debt on property<span class="c-red">*</span></label>
+                        <input type="text" placeholder="Enter Amount" class="peak-box-g" value="$110,845">
+                        </div>
+                        </div>
+
+                         
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 form-inner-g">
+                            <div class="peak-form">
+                            <label class="peak-form-label">Sales Price<span class="c-red">*</span></label>
+                            <input type="text" placeholder="Enter Price" class="peak-box-g" value="$188,900">
+                            </div>
+                            </div>
+                    
+                        <!-- Last left  -->
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 form-inner-g">
+                            <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-inner-g">
+                            <div class="peak-form">
+                            <label class="peak-form-label">Referral Source<span class="c-red">*</span></label>
+                            <input type="text" placeholder="Enter Title" class="peak-box-g" >
+                            </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-inner-g">
+                                <div class="peak-form">
+                                    <label class="peak-form-label">Expected Closing Date<span class="c-red">*</span></label>
+                                    <dp-date-picker placeholder="21-july-2020"   theme="dp-material"
+                                    [config]="datePickerConfig" required="true" >
+                                  </dp-date-picker>
+                                    </div>
+                            </div>
+                        </div>
+                            </div>
+
+                        <!-- end last left -->
+
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 form-inner-g">
+                            <div class="peak-form">
+                            <label class="peak-form-label">Notes</label>
+                            <textarea placeholder="Enter Notes" class="peak-box-g peak-t-area-notes">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </textarea>
+                            </div>
+                            </div>
+
+
+                </div>
+            </div>
+            <div class="button-area-g">
+                <button class="create-btn">CREATE</button>
+                <button class="cancel-btn">Cancel</button>
+            </div>
+         </div>    
+        </div>
+      </div>
+    
+    </main>
+  </div>
+  
