@@ -31,7 +31,7 @@ const routes: Routes = [
   { path: 'manage-intake-form', component:ManageIntakeFormComponent},
   { path: 'manage-approval-list', component:ManageApprovalListComponent},
   { path: 'manage-exchanges', component:ManageExchangesComponent},
-  { path: 'manage-approval-list-detail', component:ManageApprovalListDetailComponent},
+  { path: 'manage-approval-list-detail', component:ManageApprovalListDetailComponent}
 
   
 
