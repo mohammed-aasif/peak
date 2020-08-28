@@ -9,6 +9,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { OrderModule } from 'ngx-order-pipe';
 import { ToastrModule } from 'ngx-toastr';
 import { DpDatePickerModule } from "ng2-date-picker";
+ 
 
 //components
 import { LoginComponent } from './login/login.component';
@@ -21,6 +22,13 @@ import { ManageIntakeFormComponent } from './manage-intake-form/manage-intake-fo
 import { ManageApprovalListComponent } from './manage-approval-list/manage-approval-list.component';
 import { ManageExchangesComponent } from './manage-exchanges/manage-exchanges.component';
 import { ManageApprovalListDetailComponent } from './manage-approval-list-detail/manage-approval-list-detail.component';
+import { ManageEmployeesAddDetailComponent } from './manage-employees-add-detail/manage-employees-add-detail.component';
+import { ManageEmployeesDetailComponent } from './manage-employees-detail/manage-employees-detail.component';
+import { ManageEmployeeComponent } from './manage-employee/manage-employee.component';
+
+ 
+
+
  
 //module
 
@@ -34,7 +42,8 @@ import { ManageApprovalListDetailComponent } from './manage-approval-list-detail
     ValidateEqualModule,
     NgxPaginationModule,
     OrderModule,
-    DpDatePickerModule,
+    DpDatePickerModule 
+ 
     
 
   ],
@@ -45,6 +54,6 @@ import { ManageApprovalListDetailComponent } from './manage-approval-list-detail
 
   ],
   schemas: [NO_ERRORS_SCHEMA],
-  declarations: [LoginComponent,  HeaderComponent, SidebarComponent,  ManageProfileComponent, DasboardComponent,ManageIntakeFormComponent, ManageApprovalListComponent, ManageExchangesComponent,ManageApprovalListDetailComponent],
+  declarations: [LoginComponent,  HeaderComponent, SidebarComponent,  ManageProfileComponent, DasboardComponent,ManageIntakeFormComponent, ManageApprovalListComponent, ManageExchangesComponent,ManageApprovalListDetailComponent, ManageEmployeesAddDetailComponent, ManageEmployeesDetailComponent,ManageEmployeeComponent]
 })
 export class SuperadminModule { }

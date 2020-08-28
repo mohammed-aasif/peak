@@ -2516,3 +2516,596 @@ button.btn.peak_grey.btn_downloads {
 
 
 /*manage-approval-list-detail  End*/
+
+
+/*02bc_Exchange_Identification Start*/
+#identifications p{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #3A3E40;
+    margin-bottom: 25px;
+}
+#identifications h4{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #212121;
+    margin-bottom: 18px;
+}
+#identifications h4 span{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #F05922;
+    display: inline-block;
+}
+#identifications h4 span svg{margin-right: 6px;}
+
+#identifications .flx_div .flx_section span{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: #3A3E40;
+    margin-left: 18px;
+}
+.flx_div {width: 100%;}
+.flx_section{max-width: 100%;}
+#identifications .flx_div .flx_section{margin-right: 18px;}
+#identifications .ipt_label{display: block;}
+.ipt{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #242E3E;
+    background: #FAFDFF;
+    border: 1px solid #CCD9E1;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 126px;
+    max-width: 100%;
+    padding: 8px 20px;
+    margin-bottom: 20px;
+
+}
+.ipt.big{
+    width: 505px;
+    max-width: 100%;
+}
+
+#identifications h3{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #354052;
+    margin-bottom: 12px;
+}
+
+.save_id{    
+    background: #14BC99;
+    border-radius: 50px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 12px;
+    width: 156px;
+    border:none;
+    outline: none;
+}
+
+.download_id{
+    background: #F05922;
+    border-radius: 50px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 12px;
+    width: 320px;
+    max-width: 100%;
+    border:none;
+    outline: none;
+}
+
+.rule_form{
+    background: #354052;
+    border-radius: 50px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 12px;
+    width: 250px;
+    max-width: 100%;
+    border:none;
+    outline: none;
+}
+.btn_btm button:focue{outline: none;}
+.btn_btm{margin: auto;text-align: center;margin-top: 40px;}
+.btn_btm button{margin-right: 20px;margin-bottom: 15px;}
+.btn_btm button:last-child{margin-right: 0px;}
+/*02bc_Exchange_Identification End*/
+
+
+/*manage-employees-add-detail Start*/
+.manage-employees-add-detail{
+    float: left;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    min-height: calc(100vh - 100px);
+}
+.manage-employees-add-detail h4{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: #030207;
+    margin-bottom: 20px;
+}
+.manage-employees-add-detail .ipt_label{display: block;}
+.manage-employees-add-detail .ipt{
+    background: #FAFDFF;
+    width: 207px;
+    max-width: 100%;
+}
+.manage-employees-add-detail .flx_div .form-group{margin-right: 0px;width: 205px;max-width: 100%;}
+
+.manage-employees-add-detail .btn_flex{display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;padding-top: 15px;max-width: 300px;margin: auto;}
+
+.manage-employees-add-detail .btn_flex button{margin-bottom: 15px;}
+
+/*manage-employees-add-detail End*/
+
+
+/*manage-employees-detail Start*/
+.manage-employees-detail{
+    float: left;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    min-height: calc(100vh - 100px);
+}
+.manage-employees-detail .flx_div .form-group{margin-right: 0px;width: 205px;max-width: 100%;}
+.manage-employees-detail .btn_flex{display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;padding-top: 15px;max-width: 300px;margin: auto;}
+.manage-employees-detail h4{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: #030207;
+    margin-bottom: 20px;
+}
+
+/*manage-employees-detail End*/
+
+/* 02bd_Exchange_200% Rule form 28-08 */
+
+.tab-headtxt-g {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #3A3E40;
+}
+
+.tab-heading-sect-g {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tab-hd-left-g {
+    display: flex;
+    align-items: center;
+}
+
+.rule-text-g {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #212121;
+    margin-bottom: 0px;
+}
+
+.q-sv-g {
+    margin-left: 10px;
+    margin-right: 5px;
+    position: relative;
+}
+
+.wt-rule-txt-g {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 17px;
+    color: #F05922;
+}
+
+.add-property-ag-btn {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #354052;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 0;
+}
+
+.property-addr-sec-g {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.property-addr-sec-g>div {
+    margin: 10px;
+}
+
+.prop-inner-g .peak-form-label {
+    margin-bottom: 5px;
+}
+
+.prop-title-g {
+    width: 13%;
+}
+
+.prop-addr-g {
+    width: 35%;
+}
+
+.prop-acqu-g {
+    width: 20%;
+}
+
+.property-val-bx-g {
+    display: flex;
+    align-items: center;
+    background: #FAFDFF;
+    border: 1px solid #CCD9E1;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.property-val-bx-g .peak-box-g {
+    border: 0;
+    text-align: center;
+}
+
+.dollar-sym-g {
+    width: 36px;
+    height: 36px;
+    background: #E9F1F5;
+    border-right: 1px solid #CCD9E1;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prop-value-g {
+    width: 20%;
+}
+
+.perc-txt-g {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: #3A3E40;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+.prop-acqu-g .prop-inner-g .peak-box-g {
+    width: 100px;
+}
+
+
+.acqi-inner-g {
+    display: flex;
+    align-items: center;
+}
+
+.rul-val-bk-g {
+    padding: 10px;
+    background: #354052;
+    border: 1px solid #CCD9E1;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.valu-lbl-g {
+    font-size: 15px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+}
+
+.rul-tx-g {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+}
+
+.tot-val-bk-g {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FAFDFF;
+    border: 1px solid #CCD9E1;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+
+.total-val-iden-g {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    color: #000000;
+    margin-bottom: 0px;
+}
+
+
+.tt-iden-txt-g {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    color: #000000;
+    margin-bottom: 0px;
+}
+
+.val-left-g,.val-right-g{
+    margin-bottom: 10px;
+}
+
+.ident-sel-g {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px auto;
+}
+
+.ident-sel-g .peak-form-label {
+    margin-bottom: 0px;
+    margin-right: 20px;
+}
+
+.ident-sel-g .peak-box-g {
+    width: 120px;
+}
+
+.ident-sel-g p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #242E3E;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+.dis-cl-hd {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #212121;
+    margin-bottom: 10px;
+}
+
+.dis-claimer-g p {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #3A3E40;
+}
+
+.bot-btn-sec {
+    text-align: center;
+}
+
+.save-id-btn-g {
+    background: #14BC99;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 0;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 10px;
+}
+
+.down-ex-doc-g {
+    background: #3A3E40;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: 0;
+    margin: 10px;
+}
+
+.thr-prop-btn-g {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #F05922;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: 0;
+}
+/* 02bd_Exchange_200% Rule form end 28-08 */
+
+/* manage employes 26-08*/
+
+.head-btn-bk {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.head-input-bx {
+    background: #FFFFFF;
+    border: 1px solid #D8D8D8;
+    border-radius: 6px;
+    width: 210px;
+    padding: 10px 15px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #595959;
+    margin: 10px;
+}
+
+.head-input-bx::placeholder{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #595959;
+    opacity: 0.5;
+    
+}
+
+.emp-id-bx {
+    width: 150px;
+}
+
+.filter-btn-g {
+    background: #015289;
+    border: 1px solid #D8D8D8;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 10px 30px;
+    margin: 10px;
+    border: 0;
+}
+
+
+.set-cmn-btn {
+    background: #FFFFFF;
+    border: 1px solid #015289;
+    border-radius: 50px;
+    padding: 10px 30px;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #015289;}
+
+.peak-table thead tr th {
+    padding: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    border: 1px solid #DBDBDB;
+    color: #242E3E;
+}
+
+/* toogle switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    margin-bottom: 0px;
+}
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #FF8506;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #FF8506;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    transform: translateX(15px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  #manage-emp-table thead tr th:nth-last-child(2),#manage-emp-table tbody tr td:nth-last-child(2){
+      text-align: center;
+      opacity: 1;
+  }
+
+/* end toogle switch */
+/* end Manage employes 26-08 */
+
+/* Manage exchange approval list 26-08 */
+
+
+
+/* end  Manage exchange approval list 26-08 */

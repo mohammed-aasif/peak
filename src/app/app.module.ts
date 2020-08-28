@@ -6,6 +6,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { OrderModule } from 'ngx-order-pipe';
 import { AppRoutingModule } from './app-routing.module';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 
 // components
@@ -13,6 +14,9 @@ import { AppComponent } from './app.component';
 //interceptor
 import { TokenAuthInterceptor } from './_middleware/token-auth.interceptor';
 import { HttpErrorInterceptor } from './_middleware/http-error.interceptor';
+ 
+ 
+
  
 
 @NgModule({
@@ -25,6 +29,7 @@ import { HttpErrorInterceptor } from './_middleware/http-error.interceptor';
     AppRoutingModule,
     NgxPaginationModule,
     OrderModule,
+    FormsModule 
 
   ],
   schemas: [NO_ERRORS_SCHEMA],

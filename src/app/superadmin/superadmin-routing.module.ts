@@ -13,6 +13,9 @@ import { ManageIntakeFormComponent } from './manage-intake-form/manage-intake-fo
 import { ManageApprovalListComponent } from './manage-approval-list/manage-approval-list.component';
 import { ManageExchangesComponent } from './manage-exchanges/manage-exchanges.component';
 import { ManageApprovalListDetailComponent } from './manage-approval-list-detail/manage-approval-list-detail.component';
+import { ManageEmployeesDetailComponent } from './manage-employees-detail/manage-employees-detail.component';
+import { ManageEmployeeComponent } from './manage-employee/manage-employee.component';
+import { ManageEmployeesAddDetailComponent } from './manage-employees-add-detail/manage-employees-add-detail.component';
 
 
 
@@ -31,7 +34,11 @@ const routes: Routes = [
   { path: 'manage-intake-form', component:ManageIntakeFormComponent},
   { path: 'manage-approval-list', component:ManageApprovalListComponent},
   { path: 'manage-exchanges', component:ManageExchangesComponent},
-  { path: 'manage-approval-list-detail', component:ManageApprovalListDetailComponent}
+  { path: 'manage-approval-list-detail', component:ManageApprovalListDetailComponent},
+  { path: 'manage-employees-detail', component:ManageEmployeesDetailComponent},
+  { path: 'manage-employee',component:ManageEmployeeComponent},
+  { path: 'manage-employees-add-detail', component:ManageEmployeesAddDetailComponent}
+  
 
   
 
