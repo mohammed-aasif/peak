@@ -20,6 +20,7 @@ import { DasboardComponent } from './dasboard/dasboard.component';
 import { ManageIntakeFormComponent } from './manage-intake-form/manage-intake-form.component';
 import { ManageApprovalListComponent } from './manage-approval-list/manage-approval-list.component';
 import { ManageExchangesComponent } from './manage-exchanges/manage-exchanges.component';
+import { ManageApprovalListDetailComponent } from './manage-approval-list-detail/manage-approval-list-detail.component';
  
 //module
 
@@ -44,6 +45,6 @@ import { ManageExchangesComponent } from './manage-exchanges/manage-exchanges.co
 
   ],
   schemas: [NO_ERRORS_SCHEMA],
-  declarations: [LoginComponent,  HeaderComponent, SidebarComponent,  ManageProfileComponent, DasboardComponent,ManageIntakeFormComponent, ManageApprovalListComponent, ManageExchangesComponent],
+  declarations: [LoginComponent,  HeaderComponent, SidebarComponent,  ManageProfileComponent, DasboardComponent,ManageIntakeFormComponent, ManageApprovalListComponent, ManageExchangesComponent,ManageApprovalListDetailComponent],
 })
 export class SuperadminModule { }

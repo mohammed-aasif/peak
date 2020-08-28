@@ -12,6 +12,7 @@ import { DasboardComponent } from './dasboard/dasboard.component';
 import { ManageIntakeFormComponent } from './manage-intake-form/manage-intake-form.component';
 import { ManageApprovalListComponent } from './manage-approval-list/manage-approval-list.component';
 import { ManageExchangesComponent } from './manage-exchanges/manage-exchanges.component';
+import { ManageApprovalListDetailComponent } from './manage-approval-list-detail/manage-approval-list-detail.component';
 
 
 
@@ -29,7 +30,8 @@ const routes: Routes = [
   { path: 'dashboard', component: DasboardComponent },
   { path: 'manage-intake-form', component:ManageIntakeFormComponent},
   { path: 'manage-approval-list', component:ManageApprovalListComponent},
-  { path: 'manage-exchanges', component:ManageExchangesComponent}
+  { path: 'manage-exchanges', component:ManageExchangesComponent},
+  { path: 'manage-approval-list-detail', component:ManageApprovalListDetailComponent},
 
   
 

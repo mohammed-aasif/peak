@@ -2298,3 +2298,221 @@ button.btn.peak_grey.btn_downloads {
 .peak_flex .peak_exhange_form {
     margin: 3px 0px 3px 3%;
 }
+
+
+
+
+/*manage-approval-list-detail  Start*/
+.flx_section .select_div{
+    width: 280px;
+    position: relative;
+    max-width: 100%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.select_div.small{width: 130px;}
+.flx_section .select_div select{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #3A3E40;
+    width: 100%;
+    background: #FAFDFF;
+    border: 1px solid #CCD9E1;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 8px 20px;
+}
+.select_div span{position: absolute;top: 7px;right: 20px;color: #606669;}
+
+.manage-approval-list-detail{
+    background: #FFFFFF;
+    border: 1px solid #E0E6EA;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.ipt_label{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    opacity: 0.6;
+}
+.flx_div{display: flex;flex-wrap: wrap;align-items: center;justify-content: flex-start;}
+.flx_div .flx_section{margin-right: 35px;}
+
+.txt_div{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #242E3E;
+    background: #FAFDFF;
+    border: 1px solid #CCD9E1;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 10px 20px;
+    min-height: 106px;
+}
+
+.manage-approval-list-detail h4{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #212121;
+    margin:20px 0px;
+}
+.manage-approval-list-detail .btn_flex{display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;padding-top: 15px;max-width: 270px;margin: auto;}
+.btn_Confirm{
+    background: #0CBEFF;
+    border-radius: 50px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    width: 120px;
+    padding: 12px;
+    text-align: center;
+    border:none;
+    outline: none;
+}
+.btn_Cancel{
+    background: #354052;
+    border-radius: 50px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    width: 120px;
+    padding: 12px;
+    text-align: center;
+    border:none;
+    outline: none;
+}
+.btn_Cancel:focus,.btn_Confirm:focus{outline: none;}
+.flx_div .form-group{margin-right: 40px;}
+.attachment_tabel{max-width: 660px;min-width: 660px;}
+.attachment_tabel thead tr{
+    background: #354052;
+    color: #fff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+}
+.attachment_tabel tbody tr td{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #242E3E;
+    opacity: 0.6;
+}
+.attachment_tabel tbody tr:nth-child(even){background: #F1F6F9;}
+.attachment_tabel tbody tr td,.attachment_tabel thead tr td{border: none;}
+.attachment_tabel tbody{border-bottom: 1px solid #D8E0E4;}
+.attachment_tabel tbody tr{border-right: 1px solid #D8E0E4; border-left: 1px solid #D8E0E4;}
+.attachment_tabel tbody tr td:nth-child(1),.attachment_tabel thead tr th:nth-child(1){text-align: left;}
+.attachment_tabel{text-align: center;}
+.input_file{
+    height: 100%;
+    border: 1px dashed #325AA3;
+    box-sizing: border-box;
+    background: #fff;
+    width: 400px;
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 280px;
+}
+.input_file input[type=file]{
+    width: 400px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.input_file img{margin-bottom: 12px;}
+.input_file p{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 0px;
+}
+.input_file div{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    color:#015289;
+    text-decoration: underline;
+}
+/*Custom Checkbox Start*/
+
+
+.form-group {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.form-group input.custom_ipt {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.form-group label.custom_lbl {
+  position: relative;
+  cursor: pointer;
+}
+
+.form-group label.custom_lbl:before {
+  content:'';
+  -webkit-appearance: none;
+  background: #FFFFFF;
+  border: 1px solid #93B0C3;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.form-group input.custom_ipt:checked + label.custom_lbl:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    width: 7px;
+    height: 15px;
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+.form-group input.custom_ipt:checked + label.custom_lbl:before{
+    background: #0CBEFF;
+    border-color: #0CBEFF;
+} 
+
+/*Custom Checkbox End*/
+
+
+
+/*manage-approval-list-detail  End*/
